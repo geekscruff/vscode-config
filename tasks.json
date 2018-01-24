@@ -11,6 +11,15 @@
                 "command": "rufo ${relativeFile}"
             },
             "group": "none"
+        },
+        {
+            "label": "Format Ruby document with rubocop",
+            "type": "shell",
+            "command": "rubocop -a ${relativeFile}",
+            "windows": {
+                "command": "rubocop -a ${relativeFile}"
+            },
+            "group": "none"
         }
     ]
 }
