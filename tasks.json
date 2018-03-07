@@ -20,6 +20,15 @@
                 "command": "rubocop -a ${relativeFile}"
             },
             "group": "none"
+        },
+        {
+            "label": "Format Perl document with perltidy",
+            "type": "shell",
+            "command": "perl /c/Sites/Perl-Tidy-20180220/perltidy -b -bext='/' ${relativeFile}",
+            "windows": {
+                "command": "perl /c/Sites/Perl-Tidy-20180220/perltidy -b -bext='/' ${relativeFile}"
+            },
+            "group": "none"
         }
     ]
 }
